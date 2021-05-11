@@ -1,0 +1,23 @@
+/* pages/users/users.wxss */
+
+.combtn{
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  margin: 0 auto;
+  border-radius: 5rpx;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form_{
+  min-height: 100rpx;
+  line-height: 100rpx;
+}
+.form_input{
+  border-style: solid hidden solid hidden;
+  border-block-color: #c8c8c8;
+}
