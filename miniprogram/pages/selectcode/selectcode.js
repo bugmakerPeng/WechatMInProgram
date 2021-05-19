@@ -1,20 +1,43 @@
-// pages/organization/organization.js
-
+// pages/selectcode/selectcode.js
+const db = wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    username:"java"
+     selectcode:"",
+
+  },
+  btnSub(res) {
+    this.selectcode=res.detail.value;
+    wx.navigateTo({url:'/pages/organization/organization', 
+    })
   },
 
+  onclick(){
+     if(true){
+      btnSub(res);{
+       const db = wx.cloud.database()
+          const _ = db.command
+          db.collection("organization")
+          .where({
+             _id:"cbddf0af609a3c8207c26fc77dff9418"
+          })
+          .update({
+            data:{
+              member:_.push("55")
+            }
+          })
+        }
+     }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
-  
+  onLoad: function (options) {
 
-  
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

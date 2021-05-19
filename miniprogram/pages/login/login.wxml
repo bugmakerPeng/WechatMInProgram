@@ -1,0 +1,27 @@
+
+
+
+ <view class='login'>
+        <view class='loginitem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='请输入账号'></input>
+        </view>
+      </view>
+ <view class='login'> 
+        <view class='loginitem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='请输入密码密码'></input>
+        </view>
+ </view>
+<view class='login'>       
+        <view class='loginitem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='验证码'></input>
+        </view>
+</view>
+<button type="primary" class="combtn1">登录</button>
+   
+
+
+ 
+

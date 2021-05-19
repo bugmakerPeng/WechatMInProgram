@@ -1,0 +1,40 @@
+/* pages/selectcode/selectcode.wxss */
+.combtn1{
+  margin-top:10rpx;
+  height: 100rpx;
+  width: 60%;
+
+}
+
+
+.form_ {
+  display: flex;
+  flex-direction: row;
+  height: 98rpx;
+  align-items: center;
+  border-style: hidden hidden solid hidden;
+  border-block-color:		#F5F5F5;
+  border-width:1px;
+  margin:auto;
+  margin-top:300rpx;
+  border-bottom: 1px solid #000;
+  width: 60%;
+  
+}
+
+view.form_ label {
+  height: 42rpx;
+  width: 200rpx;
+  align-self: center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+
+view.form_ input {
+  flex: 1;
+  font-size: 30rpx;
+}
+page{
+  background:#fff;
+}

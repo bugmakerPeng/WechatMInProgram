@@ -1,20 +1,32 @@
-// pages/organization/organization.js
-
+// pages/show/show.js
+const app=getApp
+const db = wx.cloud.database({
+  env: "cloud1-6gwgppm4e940135f"
+})
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    username:"java"
+     activity:[]
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
-  
-
-  
+  onLoad: function (options) {
+    db.collection("activity").get()
+     .then(res=>{
+     
+      this.setData({
+        activity:res.data
+      })    
+      console.log(this.data.activity)
+     }
+   
+     
+     )
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

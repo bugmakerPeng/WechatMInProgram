@@ -1,8 +1,0 @@
-<van-cell-group>
-  <van-field
-  model:value="{{ value }}"
-    placeholder="请输入用户名"
-    border="{{ false }}"
-    bind:change="onChange"
-  />
-</van-cell-group>

@@ -1,22 +1,52 @@
-// pages/test/test.js
+// pages/organization/organization.js
+const db = wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    value:""
+    
+      name: '',
+      introduction:"",
+      place:'',
+      supplies:'',
+      QQ_group:'',
+     
+    
   },
-  onChange(event) {
-    // event.detail 为当前输入的值
-    console.log(event.detail);
-    console.log(value)
+  
+
+  btnSub(res) {
+  
+    var {name,place,supplies,QQ_group,introduction}=res.detail.value;
+    var _id=""
+    db.collection("organization").add({
+      data:{
+        name:name,
+        place:place,
+        supplies:supplies,
+        QQ_group:QQ_group,
+        introduction:introduction,
+        imageurl:[]
+      }
+    }).then(res=>{
+      console.log(res)
+      this.setData({
+        _id:res._id
+     })
+
+    })
+    
+   
+ 
   },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     
+
   },
 
   /**

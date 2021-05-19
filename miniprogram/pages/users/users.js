@@ -1,42 +1,39 @@
 // pages/users/users.js
+const db = wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
-    name: '',
-    introduction:"",
-    place:'',
-    supplies:'',
-    QQ_group:''
-  
-},
-btnSub(res) {
+    name:'name',
+    major:"",
+    phone:"",
+    a:'',
+    list:[]
+   },
 
-  var {name,school_id,major,phone,introduction}=res.detail.value;
-  db.collection("user").add({
-    data:{
-      name:name,
-      school_id:school_id,
-      major:major,
-      phone:phone,
-      introduction:introduction,
-
-    }
-  }).then(res=>{
-    console.log(res)
-  })
-  
-  
-},
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      a:"sfsdsfg"
+    })
+db.collection("user")
+ .where({
+   _id:"28ee4e3e609a787317d280c86b78b4b3"
+ })
+  .get()
+  .then(res=>{
+    this.setData({
+      name:res.data[0].name,
+      phone:res.data[0].phone,
+      major:res.data[0].major,
+    })
+  })
+ 
   },
 
   /**

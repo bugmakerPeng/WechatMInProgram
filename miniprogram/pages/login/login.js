@@ -1,20 +1,25 @@
-// pages/organization/organization.js
-
+// pages/test/test.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    username:"java"
+    value:"",
+    username:'',
+    password:''
   },
+  onChange(event) {
+    // event.detail 为当前输入的值
+    console.log(event.detail);
 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
-  
-
-  
+  onLoad: function (options) {
+     
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

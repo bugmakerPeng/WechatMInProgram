@@ -1,25 +1,14 @@
-<form bindsubmit="btnSub">
-  <view class="form_">
-      <label  class="form_lable">姓名</label>
-      <input name="name" type="text" class="form_input" placeholder="请输入姓名" ></input>
-    </view>
-    <view class="form_">
-      <label class="form_lable">学号</label>
-      <input name="school_id" type="text" class="form_input" maxlength="11" placeholder="请输入学号" ></input>
-   </view>
-   <view class="form_">
-      <label class="form_lable">专业  </label>
-      <input name="major" type="text" class="form_input" maxlength="11" placeholder="请输入专业 " ></input>
-   </view>
-   <view class="form_">
-      <label class="form_lable">电话  </label>
-      <input name="phone" type="text" class="form_input" maxlength="11" placeholder="请输入电话 " ></input>
-   </view>
-   
-   <view class="form_">
-      <label class="form_lable">个人介绍   </label>
-      <textarea name="introduction"  class="form_input"  placeholder="请输入个人介绍" ></textarea>
-   </view>
-<button type="primary" form-type="submit" class="combtn">提交</button>
-</form>
+<van-cell-group>
+  <van-cell title="学号" value="{{name}}" />
+  <van-cell title="电话" value="{{phone}}" />
+  <van-cell title="院系" value="{{major}}" />
+  <van-cell title="密码" value="重置" is-link link-type="navigateTo"
+  url="/pages/psdupdate/psdupdate?id={{userInfo.openid}}"/>
+    <van-cell title="个人信息更改" is-link link-type="navigateTo"
+  url="/pages/userschange/userschange"/>
+  <van-cell title="账号切换" is-link link-type="redirectTo"
+  url="/pages/welcome/welcome"/>
+  <van-cell title="我的团队" is-link link-type="navigateTo"
+  url="/pages/organization/organization"/>
+</van-cell-group>
 

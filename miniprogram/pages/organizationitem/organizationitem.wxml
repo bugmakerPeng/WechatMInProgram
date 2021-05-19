@@ -1,0 +1,13 @@
+<!--pages/organizationitem/organizationitem.wxml-->
+<van-cell-group>
+  <van-cell title="组织名字" value="{{name}} "/>
+  <van-cell title="办公室" value="{{place}} "/>
+  <van-cell title="组织介绍" value="{{intrude}}"/>
+</van-cell-group>
+<view>
+  <button type="primary" bindtap="clickbtn">上传图片</button>
+   <image class="myimage" src="{{picurl}}"></image>
+</view>
+<view>
+<button class="combtn" type="primary" bindtap="gotopage1">加入组织</button>
+</view>

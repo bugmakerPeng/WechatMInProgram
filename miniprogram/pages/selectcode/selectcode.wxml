@@ -1,0 +1,10 @@
+<!--pages/selectcode/selectcode.wxml-->
+<form bindsubmit="btnSub">
+  <view class="form_">
+      <label  class="form_lable">组织码</label>
+      <input name="selectcode" type="text" class="form_input" ></input>
+    </view>
+  
+<button type="primary" form-type="submit" class="combtn1"  >提交</button>
+</form>
+

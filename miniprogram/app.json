@@ -1,8 +1,14 @@
 {
   "pages": [
-    "pages/test/test",
+
     "pages/users/users",
+    "pages/show/show",
+    "pages/selectcode/selectcode",
+    "pages/organizationitem/organizationitem",
     "pages/organization/organization",
+    "pages/userschange/userschange",
+    "pages/login/login",
+    "pages/organizationadd/organizationadd",
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -24,6 +30,42 @@
     "navigationBarTitleText": "云开发 QuickStart",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
-  
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#18cf83",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "icon/6.png",
+        "text": "个人中心",
+        "pagePath": "pages/users/users",
+        "selectedIconPath": "icon/2.png"
+      },
+      {
+        "iconPath": "icon/99.png",
+        "text": "首页",
+        "pagePath":  "pages/show/show",
+        "selectedIconPath": "icon/1.png"
+      },
+      {
+        "iconPath": "icon/88.png",
+        "text": "搜索",
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "icon/8.png"
+      },
+      {
+        "iconPath": "icon/88.png",
+        "text": "登录",
+        "pagePath": "pages/login/login",
+        "selectedIconPath": "icon/8.png"
+      }
+      
+     
+    ]
+
+
+  }
 }

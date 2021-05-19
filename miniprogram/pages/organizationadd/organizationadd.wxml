@@ -1,0 +1,34 @@
+<form bindsubmit="btnSub">
+  <view class="form_">
+      <label  class="form_lable">组织名字</label>
+      <input name="name" type="text" class="form_input" ></input>
+    </view>
+    <view class="form_">
+      <label class="form_lable">组织办公室</label>
+      <input name="place" type="text" class="form_input" maxlength="11"  ></input>
+   
+   </view>
+   <view class="form_">
+      <label class="form_lable">志愿用品  </label>
+      <input name="supplies" type="text" class="form_input" maxlength="11"  ></input>
+   </view>
+   <view class="form_">
+      <label class="form_lable">QQ群 </label>
+      <input name="QQ_group" type="text" class="form_input" maxlength="11"  ></input>
+   </view>
+
+   <button type="primary" form-type="submit" class="combtn">提交</button>
+
+</form>
+
+ 
+ 
+
+
+
+
+
+
+
+
+
