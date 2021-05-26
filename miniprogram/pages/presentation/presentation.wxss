@@ -1,0 +1,11 @@
+/* pages/presentation/presentation.wxss */
+.bg{
+  margin-bottom: 5rpx;
+  margin-top: 5rpx;
+}
+.a{
+  color:greenyellow;
+}
+.text{
+  font-size:small;
+}

@@ -1,6 +1,10 @@
 {
   "pages": [
-
+    "pages/first/first",
+    "pages/presentation/presentation",
+    
+    
+  
     "pages/users/users",
     "pages/show/show",
     "pages/selectcode/selectcode",
@@ -40,8 +44,8 @@
     "list": [
       {
         "iconPath": "icon/6.png",
-        "text": "个人中心",
-        "pagePath": "pages/users/users",
+        "text": "首页",
+        "pagePath": "pages/first/first",
         "selectedIconPath": "icon/2.png"
       },
       {
@@ -59,7 +63,7 @@
       {
         "iconPath": "icon/88.png",
         "text": "登录",
-        "pagePath": "pages/login/login",
+        "pagePath": "pages/users/users",
         "selectedIconPath": "icon/8.png"
       }
       

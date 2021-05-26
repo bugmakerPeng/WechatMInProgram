@@ -1,0 +1,28 @@
+<!--pages/presentation/presentation.wxml-->
+<view >notice！！线下活动</view>
+<view class="bg">
+ <text class="a">背景介绍：</text>
+ <view class="text">
+    <text >{{activity.background}}</text>
+  </view>
+</view>
+<view class="bg">
+ <text class="a" >活动coming！！：</text>
+ <view class="text">
+    <text >{{activity.introduce}}</text>
+  </view>
+</view>
+<view class="bg">
+ <text class="a" >奖品：</text>
+ <view class="text">
+  <view  wx:for="{{activity.prize}}" wx:key="index">
+ 
+               <text>{{item.name}}</text>
+               <image src="{{item.url}}"></image>
+  
+
+</view> 
+    
+  </view>
+</view>
+
