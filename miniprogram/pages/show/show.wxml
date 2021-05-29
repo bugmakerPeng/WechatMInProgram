@@ -1,11 +1,11 @@
 <!--pages/show/show.wxml-->
 
 <view  wx:for="{{activity}}">
-
     <text style="color : red">主题:{{item.name}}</text>
     <view></view>
     <text>活动介绍:{{item.introduce}}\n</text>
     <text>活动地点{{item.place}}\n</text>
     <text>活动总时长:{{item.total_time}}\n</text>
     <text>活动志愿时长{{item.volunteer_num}}\n</text>
+    <button data-id="{{item._id}}"  bindtap="toDetail">click"</button>
 </view>

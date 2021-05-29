@@ -1,6 +1,0 @@
-<!--components/activity.wxml-->
-<image src="{{imgurl}}"></image>
-<text>{{name}}</text>
-<text>{{place}}</text>
-<text>init</text>
-<text>components/activity.wxml</text>

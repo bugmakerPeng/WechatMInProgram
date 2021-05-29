@@ -17,15 +17,21 @@ Page({
   onLoad: function (options) {
     db.collection("activity").get()
      .then(res=>{
-     
       this.setData({
         activity:res.data
       })    
       console.log(this.data.activity)
-     }
-   
-     
+     }   
      )
+  },
+  toDetail : function(e){
+    id= e.currentTarget.dataset.id
+    console.log(id);
+    wx.setStorageSync('activityId', id);
+    wx.navigateTo({
+      url: '../activityDetail/activityDetail',
+    })
+    
   },
 
   /**

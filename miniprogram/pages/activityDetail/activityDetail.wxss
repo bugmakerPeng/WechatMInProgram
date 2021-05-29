@@ -1,0 +1,5 @@
+/* pages/activityDetail/activityDetail.wxss */
+image{
+  height: 40vh;
+  width: 100vw;
+}
