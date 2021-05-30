@@ -3,9 +3,15 @@
 <image src="{{imageurl}}"></image>
 
 <view class="place">活动地址:{{place}}</view>
-<view >开始时间:{{starttime}}</view>
+<view >开始时间:
+  {{startY}}-{{startM}}-{{startD}}-{{startH<10?("0"+startH):startH}}-{{
+    startMintue<10?("0"+startMintue):startMintue
+  }}
+
+</view>
 <view class="volunteer_time">志愿时长:{{volunteer_time}}h</view>
 <view class="volunteer_num">
 <view>志愿者总数:{{total_volunteer_num}}</view>
 <view>已报名志愿者数:{{current_volunteer_num}}</view>
 </view>
+<van-button>我要报名</van-button>

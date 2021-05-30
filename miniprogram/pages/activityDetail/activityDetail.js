@@ -12,7 +12,7 @@ Page({
       place : "",
       leader : "",
       introduce : "",
-      starttime : Date,
+      starttime :  "",
       imageurl : "",
       detail : "",
       hours : 0,
@@ -20,6 +20,11 @@ Page({
       total_volunteer_num :0,
       current_volunteer_num : 0,
       id: '',
+      startY : 0,
+      startM : 0,
+      startD : 0,
+      startH : 0,
+      startMintue:0,
   },
 
   /**
@@ -33,27 +38,43 @@ Page({
       _id :this.data.id
     }).get({
       success : res=>{
+        let s=res.data[0].work_time
         console.log(res.data);
         this.setData({
           name : res.data[0].name,
           place : res.data[0].place,
           leader : res.data[0].leader,
           introduce : res.data[0].introduce,
-          starttime : res.data[0].work_time,
           imageurl : res.data[0].imageurl,
           hours : res.data[0].total_time,
           volunteer_time : res.data[0].volunteer_time,
           total_volunteer_num : res.data[0].total_volunteer_num ,
-          current_volunteer_num : res.data[0].current_volunteer_num
+          current_volunteer_num : res.data[0].current_volunteer_num,
+          startY : parseInt(s.substring(0,4)),
+        startM :    parseInt(s.substring(4,6)),
+        startD : parseInt(s.substring(6,8)),
+        startH : parseInt(s.substring(8,10)),
+        startMintue : parseInt(s.substring(10,12))
         })
       }
     },error =>{
       console.log("查询失败")
     }
+  
     )
-    console.log(this.data);
+  
   },
+  // getHour: function(){
+  //   return this.data.startH<10?"0"+String(this.data.startH):
+  //   String(this.data.startH)
+  // },
 
+  // getMintue : function () {
+  //   return this.data.startMintue<10?"0"+String(this.data.startMintue):
+  //   String(this.data.startMintue)
+  // }
+    
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
