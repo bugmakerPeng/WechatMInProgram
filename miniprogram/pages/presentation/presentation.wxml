@@ -3,13 +3,13 @@
 <view class="bg">
  <text class="a">背景介绍：</text>
  <view class="text">
-    <text >{{activity.background}}</text>
+    <text user-select="true">{{activity.background}}</text>
   </view>
 </view>
 <view class="bg">
  <text class="a" >活动coming！！：</text>
  <view class="text">
-    <text >{{activity.introduce}}</text>
+    <text user-select="true">{{activity.introduce}}</text>
   </view>
 </view>
 <view class="bg">

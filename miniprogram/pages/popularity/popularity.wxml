@@ -1,0 +1,12 @@
+<!--pages/popularization/popularization.wxml-->
+<image src="/icon/33.png" class="img"></image>
+<view class="demo1">
+  <text>项目</text>
+</view>
+<view wx:for="{{act}}" class="box">
+  <navigator url="../details/details?id={{ item._id }}"> 
+    <view class="l1">{{ item.name }}</view>
+    <view class="l2"><text>人数:{{ item.member.length }}</text><text class="time">时长:{{ item.time }}h</text></view>
+    <view class="l3"><text>创建日期:{{ item.begin }}</text><text class="addr">地址:{{ item.location }}</text></view>
+  </navigator>
+</view>

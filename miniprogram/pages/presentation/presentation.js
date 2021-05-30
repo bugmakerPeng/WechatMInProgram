@@ -24,7 +24,7 @@ Page({
     .then(res=>{
      this.setData({
        activity:res.data
-     })    
+     })  
      console.log(this.data.activity)
     },
     

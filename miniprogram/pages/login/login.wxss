@@ -49,3 +49,11 @@ page{
   border-radius: 5rpx;
  
 }
+
+.register{
+  position: absolute;
+  left: 260px;
+  top: 210px;
+  text-align: center;
+  text-decoration: underline;
+}

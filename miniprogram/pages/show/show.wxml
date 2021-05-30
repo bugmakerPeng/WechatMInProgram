@@ -1,13 +1,11 @@
 <!--pages/show/show.wxml-->
-<view class="main">
+
 <view  wx:for="{{activity}}">
-    <text class="title">{{item.name}}</text>
+
+    <text style="color : red">主题:{{item.name}}</text>
     <view></view>
-    <text class="introduce">介绍:{{item.introduce}}\n</text>
-    <text class="place">活动地点:{{item.place}}\n</text>
-    <text class="hour">时长:{{item.total_time}}h\n   </text>
-    <text class="volunteer_hour">志愿时长{{item.volunteer_time}}h\n</text>
-    <van-button data-id="{{item._id}}"  bindtap="toDetail" round type="primary" size="small" color
-    ="purple">了解详情</van-button>
-</view>
+    <text>活动介绍:{{item.introduce}}\n</text>
+    <text>活动地点:{{item.place}}\n</text>
+    <text>活动总时长:{{item.total_time}}\n</text>
+    <text>活动志愿时长:{{item.volunteer_num}}\n</text>
 </view>

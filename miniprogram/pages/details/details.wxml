@@ -1,0 +1,24 @@
+<!--pages/details/details.wxml-->
+<swiper class="sw" autoplay="true" circular="true">
+  <swiper-item wx:for="{{ img }}">
+    <image mode="aspectFit" src="{{ item }}"></image>
+  </swiper-item>
+</swiper>
+<view class="title">
+  <text>{{ name }}</text>
+</view>
+<view class="content">
+  <text>背景介绍：</text>
+  <view class="indent">{{ background }}。</view>
+</view>
+<view class="content">
+  <text>选址原因：</text>
+  <view class="indent">{{ content }}。</view>
+</view>
+<view class="content">
+  <text>活动目的：</text>
+  <view class="indent">{{ purpose }}。</view>
+</view>
+<view class="aboutus">
+  <navigator url="#">关于我们</navigator>
+</view>

@@ -1,18 +1,24 @@
 // pages/organization/organization.js
 
+const db = wx.cloud.database({
+  env: "cloud1-6gwgppm4e940135f"
+})
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    username:"java"
+    username:"我的团队",
+    organization:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  
+  onLoad: function(options){
+    
+  },
 
   
 

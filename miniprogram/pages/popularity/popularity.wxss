@@ -1,0 +1,55 @@
+/* pages/popularization/popularization.wxss */
+page{
+  background-color: white;
+}
+
+.img{
+  height: 200px;
+}
+
+.demo1{
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.box{
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.box .l1{
+  margin-top: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box .l2{
+  color: gray;
+  font-size: 15px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.box .l2 .time{
+  margin-left: 50px;
+}
+
+.box .l3{
+  color: gray;
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+
+.box .l3 .addr{
+  margin-left: 30px;
+}
+
+.box .btn{
+  width: 304px;
+  height: 81px;
+}

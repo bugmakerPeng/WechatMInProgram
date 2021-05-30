@@ -1,7 +1,8 @@
-<van-cell-group>
-  <van-cell title="{{username}}" is-link link-type="navigateTo"
-  url="/pages/organizationitem/organizationitem"/>
-  <van-cell title="新建团队" is-link link-type="navigateTo"
-  url="/pages/organizationadd/organizationadd"/>
-
-</van-cell-group>
+<view>
+  <van-cell-group>
+    <van-cell title="{{username}}" is-link link-type="navigateTo"
+    url="/pages/organizationitem/organizationitem"/>
+    <van-cell title="新建团队" is-link link-type="navigateTo"
+    url="/pages/organizationadd/organizationadd"/>
+  </van-cell-group>
+</view>

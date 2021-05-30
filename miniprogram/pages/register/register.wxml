@@ -1,0 +1,45 @@
+<!--pages/register/register.wxml-->
+<view class='register'>
+        <view class='registeritem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='请输入学号'></input>
+        </view>
+      </view>
+      <view class='register'> 
+        <view class='registeritem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='请输入用户名'></input>
+        </view>
+ </view>
+ <view class='register'> 
+        <view class='registeritem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='请输入密码'></input>
+        </view>
+ </view>
+ <view class='register'> 
+        <view class='registeritem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='请重复密码'></input>
+        </view>
+ </view>
+<view class='register'>       
+        <view class='registeritem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='电话'></input>
+        </view>
+</view>
+<view class='register'> 
+        <view class='registeritem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='院系'></input>
+        </view>
+ </view>
+ <view class='register'> 
+        <view class='registeritem'>
+            <image src='../../icon/屏幕截图 2021-05-07.png' />
+            <input placeholder='验证码'></input>
+        </view>
+ </view>
+<button type="primary" class="combtn1">注册</button>
+<view></view>

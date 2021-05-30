@@ -1,0 +1,24 @@
+/* pages/details/details.wxss */
+page{
+  background-color: white;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.aboutus{
+  text-align: right;
+}
+
+.indent{
+  text-indent: 2em;
+}
+
+.content text{
+  font-size: 20px;
+  color: gray;
+}
+

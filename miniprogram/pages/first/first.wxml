@@ -1,10 +1,16 @@
 <!--pages/first/first.wxml-->
 
-<van-search value="{{ value }}" placeholder="请输入搜索关键词" 
-/>
+<swiper class="sw" autoplay="true" circular="true">
+  <swiper-item>
+    <image src="/icon/11.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/icon/22.jpg"></image>
+  </swiper-item>
+</swiper>
 <van-grid column-num="2" gutter="5px" clickable="true">
- <van-grid-item icon="photo-o" text="文字"  />
-  <van-grid-item icon="photo-o" text="文字"  />
-  <van-grid-item icon="photo-o" text="文字" />
-  <van-grid-item icon="/icon/1.png" text="文字"  />
+  <van-grid-item icon="/icon/login.png" text="登录" url="../login/login" />
+  <van-grid-item icon="/icon/intro.png" text="宣传" url="../presentation/presentation" />
+  <van-grid-item icon="/icon/popularity.png" text="科普" url="../popularity/popularity" />
+  <van-grid-item icon="/icon/1.png" text="团队" url="../organization/organization" />
 </van-grid>

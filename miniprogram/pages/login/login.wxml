@@ -20,6 +20,8 @@
         </view>
 </view>
 <button type="primary" class="combtn1">登录</button>
+<view></view>
+<navigator url="../register/register" class="register">去注册</navigator>
    
 
 
