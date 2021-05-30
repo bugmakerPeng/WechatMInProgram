@@ -1,9 +1,11 @@
 <!--pages/activityDetail/activityDetail.wxml-->
-<text>{{name}}</text>
+<text class="title">{{name}}</text>
 <image src="{{imageurl}}"></image>
-<text>{{name}}</text>
-<view>活动地址:{{place}}</view>
-<view>开始时间:{{starttime}}</view>
-<view>志愿时长:{{volunteer_time}}h</view>
+
+<view class="place">活动地址:{{place}}</view>
+<view >开始时间:{{starttime}}</view>
+<view class="volunteer_time">志愿时长:{{volunteer_time}}h</view>
+<view class="volunteer_num">
 <view>志愿者总数:{{total_volunteer_num}}</view>
 <view>已报名志愿者数:{{current_volunteer_num}}</view>
+</view>
